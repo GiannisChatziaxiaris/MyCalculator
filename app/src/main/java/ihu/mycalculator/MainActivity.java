@@ -66,5 +66,40 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("ERROR");
         }
     }
+    public void mul(View view) {
+        String num1Str = editText1.getText().toString();
+        String num2Str = editText2.getText().toString();
 
+        if (!num1Str.isEmpty() && !num2Str.isEmpty()) {
+            try {
+                int num1 = Integer.parseInt(num1Str);
+                int num2 = Integer.parseInt(num2Str);
+
+                int result = num1 * num2;
+                textView.setText(String.valueOf(result));
+            } catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
+    }
+    public void div(View view) {
+        String num1Str = editText1.getText().toString();
+        String num2Str = editText2.getText().toString();
+
+        if (!num1Str.isEmpty() && !num2Str.isEmpty()) {
+            try {
+                int num1 = Integer.parseInt(num1Str);
+                int num2 = Integer.parseInt(num2Str);
+
+                int result = num1 / num2;
+                textView.setText(String.valueOf(result));
+            } catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
+    }
 }

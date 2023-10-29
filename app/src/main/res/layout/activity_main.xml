@@ -108,30 +108,34 @@
                 app:cornerRadius="360dp">
 
             </com.google.android.material.button.MaterialButton>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_multiply"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="360dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:text="*"
-                android:textSize="32dp"
-                android:textColorLink="@color/white"
+                android:layout_margin="12dp"
                 android:backgroundTint="#FF4800"
-                android:id="@+id/button_multiply"
-                android:layout_margin="12dp">
+                android:onClick="mul"
+                android:text="*"
+                android:textColorLink="@color/white"
+                android:textSize="32dp"
+                app:cornerRadius="360dp">
 
             </com.google.android.material.button.MaterialButton>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_divide"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="360dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:text="/"
-                android:textSize="32dp"
-                android:textColorLink="@color/white"
+                android:layout_margin="12dp"
                 android:backgroundTint="#FF4800"
-                android:id="@+id/button_divide"
-                android:layout_margin="12dp">
+                android:onClick="div"
+                android:text="/"
+                android:textColorLink="@color/white"
+                android:textSize="32dp"
+                app:cornerRadius="360dp">
 
             </com.google.android.material.button.MaterialButton>
 
