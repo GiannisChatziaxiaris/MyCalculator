@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         editText2 = findViewById(R.id.edit_text2);
     }
 
-    public void Add(View view) {
+    public void add(View view) {
         String num1Str = editText1.getText().toString();
         String num2Str = editText2.getText().toString();
 
@@ -41,10 +41,30 @@ public class MainActivity extends AppCompatActivity {
                 int result = num1 + num2;
                 textView.setText(String.valueOf(result));
             } catch (NumberFormatException e) {
-                textView.setText("Invalid input. Please enter valid numbers.");
+                textView.setText("ERROR");
             }
         } else {
-            textView.setText("Please enter valid numbers.");
+            textView.setText("ERROR");
         }
     }
+
+    public void sub(View view) {
+        String num1Str = editText1.getText().toString();
+        String num2Str = editText2.getText().toString();
+
+        if (!num1Str.isEmpty() && !num2Str.isEmpty()) {
+            try {
+                int num1 = Integer.parseInt(num1Str);
+                int num2 = Integer.parseInt(num2Str);
+
+                int result = num1 - num2;
+                textView.setText(String.valueOf(result));
+            } catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
+    }
+
 }
