@@ -17,12 +17,13 @@
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
-        android:textSize="64dp">
+        android:textSize="64dp"
+        android:inputType="text">
 
     </TextView>
 
     <EditText
-        android:id="@+id/textbox1"
+        android:id="@+id/edit_text1"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -32,25 +33,28 @@
         android:layout_below="@+id/result_textview"
         android:textAlignment="textEnd"
         android:text=""
-        android:textSize="32dp">
-
+        android:textSize="32dp"
+        android:inputType="text"
+        >
 
 
 
     </EditText>
 
     <EditText
-        android:id="@+id/textbox2"
+        android:id="@+id/edit_text2"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textbox1"
+        android:layout_below="@+id/edit_text1"
         android:textAlignment="textEnd"
         android:text=""
-        android:textSize="32dp">
+        android:textSize="32dp"
+        android:inputType="text"
+        >
 
 
 
@@ -76,16 +80,17 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_plus"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="360dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:text="+"
-                android:textSize="32dp"
-                android:textColorLink="@color/white"
+                android:layout_margin="12dp"
                 android:backgroundTint="#FF4800"
-                android:id="@+id/button_plus"
-                android:layout_margin="12dp">
+                android:onClick="Add"
+                android:text="+"
+                android:textColorLink="@color/white"
+                android:textSize="32dp"
+                app:cornerRadius="360dp">
 
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton

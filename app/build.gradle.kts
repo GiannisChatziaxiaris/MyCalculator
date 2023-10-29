@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "ihu.mycalculator"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ihu.mycalculator"
