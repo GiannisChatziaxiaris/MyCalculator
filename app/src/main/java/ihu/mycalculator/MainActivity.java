@@ -8,7 +8,7 @@ import android.widget.EditText;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
-    MaterialButton button_plus, button_minus, button_multiply, button_divide,button_cos;
+    MaterialButton button_plus, button_minus, button_multiply, button_divide, button_cos;
 
 
     @Override
@@ -30,3 +30,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+//ama den mas kanei to panw kai to katw pou exw san sxolia einai kalo
+    //public class actionPerformed {
+//        // Edw mpainei o kwdikas gia na metriseis to cosine
+//        String angleText = angleInput.getText(); // pairnei to angle apo to input
+//
+//        double angle = Double.parseDouble(angleText);
+//        double angleInRadians = Math.toRadians(angle);
+//        double cosValue = Math.cos(angleInRadians);
+//    }
+//}
+
+
+
+
