@@ -102,4 +102,20 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("ERROR");
         }
     }
+    public void tan(View view) {
+        String num1Str = editText1.getText().toString();
+
+        if ( !num1Str.isEmpty() ) {
+            try {
+                int num1 = Integer.parseInt(num1Str);
+
+                double result = Math.tan(num1);
+                textView.setText(String.valueOf(result));
+            }   catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
+    }
 }
