@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
-    MaterialButton buttonPlus, buttonMinus, buttonMultiply, buttonDivide;
+    MaterialButton buttonPlus, buttonMinus, buttonMultiply, buttonDivide, buttonSin, buttonCos, buttonTan;
     TextView textView;
     EditText editText1, editText2;
 
@@ -25,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
         buttonDivide = findViewById(R.id.button_divide);
         buttonMultiply = findViewById(R.id.button_multiply);
         buttonMinus = findViewById(R.id.button_minus);
+        buttonSin = findViewById(R.id.button_sin);
+        buttonCos = findViewById(R.id.button_cos);
+        buttonTan = findViewById(R.id.button_tan);
         textView = findViewById(R.id.result_textview);
-        editText1 = findViewById(R.id.edit_text1);
-        editText2 = findViewById(R.id.edit_text2);
+        editText1 = findViewById(R.id.textbox1);
+        editText2 = findViewById(R.id.textbox2);
     }
 
     public void add(View view) {
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-  public void calculateSine(View view) {
+  public void sin(View view) {
         String numStr = editText1.getText().toString();
 
         if (!numStr.isEmpty()) {

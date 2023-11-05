@@ -76,42 +76,47 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="100dp"
-                android:layout_height="72dp"
-                app:cornerRadius="360dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:text="sin"
-                android:textSize="14dp"
-                android:textColorLink="@color/white"
-                android:backgroundTint="#FF4800"
                 android:id="@+id/button_sin"
-                android:layout_margin="12dp">
-
-            </com.google.android.material.button.MaterialButton>
-            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="100dp"
                 android:layout_height="72dp"
-                app:cornerRadius="360dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:text="cos"
-                android:textSize="14dp"
-                android:textColorLink="@color/white"
+                android:layout_margin="12dp"
                 android:backgroundTint="#FF4800"
+                android:onClick="sin"
+                android:text="sin"
+                android:textColorLink="@color/white"
+                android:textSize="14dp"
+                app:cornerRadius="360dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_cos"
-                android:layout_margin="12dp">
-
-            </com.google.android.material.button.MaterialButton>
-            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="100dp"
                 android:layout_height="72dp"
-                app:cornerRadius="360dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:text="tan"
-                android:textSize="14dp"
-                android:textColorLink="@color/white"
+                android:layout_margin="12dp"
                 android:backgroundTint="#FF4800"
+                android:onClick="cos"
+                android:text="cos"
+                android:textColorLink="@color/white"
+                android:textSize="14dp"
+                app:cornerRadius="360dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_tan"
-                android:layout_margin="12dp">
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#FF4800"
+                android:onClick="tan"
+                android:text="tan"
+                android:textColorLink="@color/white"
+                android:textSize="14dp"
+                app:cornerRadius="360dp">
 
             </com.google.android.material.button.MaterialButton>
 
