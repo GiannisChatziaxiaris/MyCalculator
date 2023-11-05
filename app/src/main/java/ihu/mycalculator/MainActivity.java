@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import java.text.DecimalFormat;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -102,4 +103,27 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("ERROR");
         }
     }
+
+    public void calculateSine(View view) {
+        String numStr = editText1.getText().toString();
+
+        if (!numStr.isEmpty()) {
+            try {
+                double num = Double.parseDouble(numStr);
+
+                double result = Math.sin(Math.toRadians(num));
+
+                DecimalFormat decimalFormat = new DecimalFormat("#.####");
+                String formattedResult = decimalFormat.format(result);
+
+                textView.setText(formattedResult);
+            } catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
+
+    }
+
 }
