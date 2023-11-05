@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.result_textview);
         editText1 = findViewById(R.id.edit_text1);
         editText2 = findViewById(R.id.edit_text2);
+
     }
 
     public void add(View view) {
