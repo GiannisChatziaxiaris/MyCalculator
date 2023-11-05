@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
   public void calculateSine(View view) {
         String numStr = editText1.getText().toString();
 
@@ -136,6 +137,24 @@ public class MainActivity extends AppCompatActivity {
                 int num1 = Integer.parseInt(num1Str);
 
                 double result = Math.cos(num1);
+              
+                textView.setText(String.valueOf(result));
+            }   catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
+    }
+  
+  public void tan(View view) {
+        String num1Str = editText1.getText().toString();
+
+        if ( !num1Str.isEmpty() ) {
+            try {
+                int num1 = Integer.parseInt(num1Str);
+
+                double result = Math.tan(num1);
                 textView.setText(String.valueOf(result));
             }   catch (NumberFormatException e) {
                 textView.setText("ERROR");
