@@ -67,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("ERROR");
         }
     }
-    public void mul(View view) {
+    
+  public void mul(View view) {
         String num1Str = editText1.getText().toString();
         String num2Str = editText2.getText().toString();
 
@@ -85,7 +86,8 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("ERROR");
         }
     }
-    public void div(View view) {
+    
+  public void div(View view) {
         String num1Str = editText1.getText().toString();
         String num2Str = editText2.getText().toString();
 
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void calculateSine(View view) {
+  public void calculateSine(View view) {
         String numStr = editText1.getText().toString();
 
         if (!numStr.isEmpty()) {
@@ -124,6 +126,23 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("ERROR");
         }
 
+    }
+  
+  public void cos(View view) {
+        String num1Str = editText1.getText().toString();
+
+        if ( !num1Str.isEmpty() ) {
+            try {
+                int num1 = Integer.parseInt(num1Str);
+
+                double result = Math.cos(num1);
+                textView.setText(String.valueOf(result));
+            }   catch (NumberFormatException e) {
+                textView.setText("ERROR");
+            }
+        } else {
+            textView.setText("ERROR");
+        }
     }
 
 }
